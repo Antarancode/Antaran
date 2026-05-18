@@ -5,7 +5,7 @@
 
 import { SlashCommandBuilder, EmbedBuilder, MessageFlags } from 'discord.js';
 import { logger } from '../../utils/logger.js';
-import { handleInteractionError, TitanBotError, ErrorTypes } from '../../utils/errorHandler.js';
+import { handleInteractionError, 𝔄𝔫𝔱𝔞𝔯𝔞𝔫Error, ErrorTypes } from '../../utils/errorHandler.js';
 import { getLeaderboard, getLevelingConfig, getXpForLevel } from '../../services/leveling.js';
 
 import { InteractionHelper } from '../../utils/interactionHelper.js';
