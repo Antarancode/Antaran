@@ -49,10 +49,10 @@ export const ErrorTypes = {
 
 
 
-export class TitanBotError extends Error {
+export class 𝔄𝔫𝔱𝔞𝔯𝔞𝔫Error extends Error {
     constructor(message, type = ErrorTypes.UNKNOWN, userMessage = null, context = {}) {
         super(message);
-        this.name = 'TitanBotError';
+        this.name = '𝔄𝔫𝔱𝔞𝔯𝔞𝔫Error';
         this.type = type;
         this.userMessage = userMessage;
         this.context = context;
@@ -65,7 +65,7 @@ export class TitanBotError extends Error {
 
 
 export function categorizeError(error) {
-    if (error instanceof TitanBotError) {
+    if (error instanceof 𝔄𝔫𝔱𝔞𝔯𝔞𝔫Error) {
         return error.type;
     }
 
