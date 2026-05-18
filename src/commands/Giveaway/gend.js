@@ -53,7 +53,7 @@ export default {
 
             
             if (!messageId || !/^\d+$/.test(messageId)) {
-                throw new TitanBotError(
+                throw new 𝔄𝔫𝔱𝔞𝔯𝔞𝔫Error(
                     'Invalid message ID format',
                     ErrorTypes.VALIDATION,
                     'Please provide a valid message ID.',
@@ -65,7 +65,7 @@ export default {
             const giveaway = giveaways.find(g => g.messageId === messageId);
 
             if (!giveaway) {
-                throw new TitanBotError(
+                throw new 𝔄𝔫𝔱𝔞𝔯𝔞𝔫Error(
                     `Giveaway not found: ${messageId}`,
                     ErrorTypes.VALIDATION,
                     "No giveaway was found with that message ID in the database.",
@@ -93,7 +93,7 @@ export default {
             });
 
             if (!channel || !channel.isTextBased()) {
-                throw new TitanBotError(
+                throw new 𝔄𝔫𝔱𝔞𝔯𝔞𝔫Error(
                     `Channel not found: ${updatedGiveaway.channelId}`,
                     ErrorTypes.VALIDATION,
                     "Could not find the channel where the giveaway was hosted. The giveaway state has been updated.",
@@ -109,7 +109,7 @@ export default {
                 });
 
             if (!message) {
-                throw new TitanBotError(
+                throw new 𝔄𝔫𝔱𝔞𝔯𝔞𝔫Error(
                     `Message not found: ${messageId}`,
                     ErrorTypes.VALIDATION,
                     "Could not find the giveaway message. The giveaway state has been updated.",
