@@ -67,7 +67,7 @@ export const pgConfig = {
         connectionTimeoutMillis: parseInt(process.env.POSTGRES_CONNECTION_TIMEOUT) || 10000,
         
         
-        application_name: 'titanbot',
+        application_name: '𝔄𝔫𝔱𝔞𝔯𝔞𝔫',
         statement_timeout: process.env.NODE_ENV === 'production' ? 30000 : 0,
         keepalives: 1,
         keepalives_idle: 30,
