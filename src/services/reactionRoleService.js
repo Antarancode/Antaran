@@ -260,7 +260,7 @@ export async function addReactionRole(client, guildId, messageId, emoji, roleId)
         logger.info(`Added reaction role for emoji ${emoji} to message ${messageId} in guild ${guildId}`);
         return true;
     } catch (error) {
-        if (error.name === 'TitanBotError') {
+        if (error.name === '𝔄𝔫𝔱𝔞𝔯𝔞𝔫Error') {
             throw error;
         }
         logger.error(`Error adding reaction role in guild ${guildId}:`, error);
@@ -299,7 +299,7 @@ export async function deleteReactionRoleMessage(client, guildId, messageId) {
         logger.info(`Deleted reaction role message ${messageId} in guild ${guildId}`);
         return true;
     } catch (error) {
-        if (error.name === 'TitanBotError') {
+        if (error.name === '𝔄𝔫𝔱𝔞𝔯𝔞𝔫Error') {
             throw error;
         }
         logger.error(`Error deleting reaction role message in guild ${guildId}:`, error);
