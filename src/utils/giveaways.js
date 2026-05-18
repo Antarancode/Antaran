@@ -78,7 +78,7 @@ export async function saveGiveaway(client, guildId, giveawayData) {
         }
 
         if (!giveawayData || !giveawayData.messageId) {
-            throw new TitanBotError(
+            throw new 𝔄𝔫𝔱𝔞𝔯𝔞𝔫Error(
                 'Invalid giveaway data: missing messageId',
                 ErrorTypes.VALIDATION,
                 'Cannot save giveaway without a message ID.',
@@ -99,7 +99,7 @@ export async function saveGiveaway(client, guildId, giveawayData) {
         return true;
     } catch (error) {
         logger.error(`Error saving giveaway in guild ${guildId}:`, error);
-        if (error instanceof TitanBotError) {
+        if (error instanceof 𝔄𝔫𝔱𝔞𝔯𝔞𝔫Error) {
             throw error;
         }
         return false;
@@ -121,7 +121,7 @@ export async function deleteGiveaway(client, guildId, messageId) {
         }
 
         if (!messageId) {
-            throw new TitanBotError(
+            throw new 𝔄𝔫𝔱𝔞𝔯𝔞𝔫Error(
                 'Missing messageId parameter',
                 ErrorTypes.VALIDATION,
                 'Cannot delete giveaway without a message ID.',
@@ -147,7 +147,7 @@ export async function deleteGiveaway(client, guildId, messageId) {
         return true;
     } catch (error) {
         logger.error(`Error deleting giveaway ${messageId} in guild ${guildId}:`, error);
-        if (error instanceof TitanBotError) {
+        if (error instanceof 𝔄𝔫𝔱𝔞𝔯𝔞𝔫Error) {
             throw error;
         }
         return false;
