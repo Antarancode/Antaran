@@ -1,6 +1,6 @@
 import { ActionRowBuilder, ButtonBuilder, ButtonStyle } from 'discord.js';
 import { logger } from './logger.js';
-import { TitanBotError, ErrorTypes } from './errorHandler.js';
+import { 𝔄𝔫𝔱𝔞𝔯𝔞𝔫Error, ErrorTypes } from './errorHandler.js';
 import { unwrapReplitData } from './database.js';
 import { 
     createGiveawayEmbed as createGiveawayEmbedService,
