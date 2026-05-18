@@ -141,7 +141,7 @@ export async function getReactionRoleMessage(client, guildId, messageId) {
         const data = await client.db.get(key);
         return data || null;
     } catch (error) {
-        if (error.name === 'TitanBotError') {
+        if (error.name === '𝔄𝔫𝔱𝔞𝔯𝔞𝔫Error') {
             throw error;
         }
         logger.error(`Error getting reaction role message ${messageId} in guild ${guildId}:`, error);
