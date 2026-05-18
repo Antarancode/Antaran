@@ -1,7 +1,7 @@
 import { MessageFlags, PermissionFlagsBits } from 'discord.js';
 import { errorEmbed, successEmbed } from '../utils/embeds.js';
 import { logger } from '../utils/logger.js';
-import { TitanBotError, ErrorTypes, handleInteractionError } from '../utils/errorHandler.js';
+import { 𝔄𝔫𝔱𝔞𝔯𝔞𝔫Error, ErrorTypes, handleInteractionError } from '../utils/errorHandler.js';
 import { 
     getGuildGiveaways, 
     saveGiveaway, 
@@ -45,7 +45,7 @@ export const giveawayJoinHandler = {
                 const giveaway = guildGiveaways.find(g => g.messageId === interaction.message.id);
 
                 if (!giveaway) {
-                    throw new TitanBotError(
+                    throw new 𝔄𝔫𝔱𝔞𝔯𝔞𝔫Error(
                         'Giveaway not found in database',
                         ErrorTypes.VALIDATION,
                         'This giveaway is no longer active.',
@@ -132,7 +132,7 @@ export const giveawayEndHandler = {
         try {
             
             if (!interaction.inGuild()) {
-                throw new TitanBotError(
+                throw new 𝔄𝔫𝔱𝔞𝔯𝔞𝔫Error(
                     'Button used outside guild',
                     ErrorTypes.VALIDATION,
                     'This button can only be used in a server.',
@@ -152,7 +152,7 @@ export const giveawayEndHandler = {
             const giveaway = guildGiveaways.find(g => g.messageId === interaction.message.id);
 
             if (!giveaway) {
-                throw new TitanBotError(
+                throw new 𝔄𝔫𝔱𝔞𝔯𝔞𝔫Error(
                     'Giveaway not found in database',
                     ErrorTypes.VALIDATION,
                     'This giveaway is no longer active.',
@@ -161,7 +161,7 @@ export const giveawayEndHandler = {
             }
 
             if (giveaway.ended || giveaway.isEnded || isGiveawayEnded(giveaway)) {
-                throw new TitanBotError(
+                throw new 𝔄𝔫𝔱𝔞𝔯𝔞𝔫BotError(
                     'Giveaway already ended',
                     ErrorTypes.VALIDATION,
                     'This giveaway has already ended.',
