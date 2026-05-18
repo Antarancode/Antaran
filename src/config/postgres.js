@@ -49,7 +49,7 @@ const validatedTables = Object.fromEntries(
 
 
 export const pgConfig = {
-    url: process.env.POSTGRES_URL || 'postgresql://localhost:5432/titanbot',
+    url: process.env.POSTGRES_URL || 'postgresql://localhost:5432/𝔄𝔫𝔱𝔞𝔯𝔞𝔫',
     
     options: {
         
