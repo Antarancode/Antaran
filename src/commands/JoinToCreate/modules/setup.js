@@ -64,7 +64,7 @@ export default {
                 }
             }
         } catch (error) {
-            if (error instanceof TitanBotError) {
+            if (error instanceof 𝔄𝔫𝔱𝔞𝔯𝔞𝔫Error) {
                 throw error;
             }
             logger.error('Error in JoinToCreate setup:', error);
