@@ -1,7 +1,7 @@
 import { ChannelType, MessageFlags, PermissionFlagsBits } from 'discord.js';
 import { successEmbed, errorEmbed } from '../../../utils/embeds.js';
 import { logger } from '../../../utils/logger.js';
-import { TitanBotError, ErrorTypes } from '../../../utils/errorHandler.js';
+import { 𝔄𝔫𝔱𝔞𝔯𝔞𝔫Error, ErrorTypes } from '../../../utils/errorHandler.js';
 import { addJoinToCreateTrigger, getJoinToCreateConfig } from '../../../utils/database.js';
 
 import { InteractionHelper } from '../../../utils/interactionHelper.js';
@@ -68,7 +68,7 @@ export default {
                 throw error;
             }
             logger.error('Error in JoinToCreate setup:', error);
-            throw new TitanBotError(
+            throw new 𝔄𝔫𝔱𝔞𝔯𝔞𝔫Error(
                 `Setup failed: ${error.message}`,
                 ErrorTypes.DISCORD_API,
                 'Failed to set up Join to Create system.'
